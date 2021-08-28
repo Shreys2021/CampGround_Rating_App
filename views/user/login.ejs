@@ -1,0 +1,31 @@
+<% layout('layout/biolerplate') %>
+
+    <div class="container d-flex justify-content-center align-items-center mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+                <div class="card shadow">
+                    <img src="https://images.unsplash.com/photo-1555392660-4f93688b1f21?ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTR8MTcwODI3Nnx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+                        alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Login</h5>
+                        <form action="/login" method="POST" novalidate class="validated-form">
+                            <div class="mb-3">
+                                <label class="form-label" for="username">Username</label>
+                                <input class="form-control" type="text" id="username" name="username" autofocus
+                                    required>
+                                <div class="valid-feedback">looks good</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="pass">Password</label>
+                                <input class="form-control" type="password" id="location" name="password" required>
+                                <div class="valid-feedback">looks good</div>
+                            </div>
+                            <button class="btn btn-success btn-block">Login</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
